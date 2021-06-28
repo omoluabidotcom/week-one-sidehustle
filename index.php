@@ -1,25 +1,26 @@
 <?php
 
-// Function 
+// function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end
 function betweenNum($start, $end) {
 
-    $result = array();
+    $answer = array();
     $end = $end + 1;
-    // $first = $start;
+
     for($i = $start; $i < $end; $i++) {
 
-        array_push($result, $start[$i]);
+        $answer[] = $i;
     }
 
-    return $result;
+    return $answer;
 }
 
+// the function above is called
 print_r(betweenNum(2, 10));
 
-
+// array of numbers
 $list = array(2, 4, 6, 9, 10);
 
-// Function to return sum of all numbers in an array
+// function that takes an array of numbers and returns the sum of these numbers
 function sumFunc($list) {
 
     $counts = count($list);
@@ -33,6 +34,7 @@ function sumFunc($list) {
   return $result;
 }
 
-// echo sumFunc($list);
+// the function above is called
+echo sumFunc($list);
 
 ?>
