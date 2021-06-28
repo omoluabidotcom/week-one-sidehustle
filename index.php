@@ -4,8 +4,9 @@
 function betweenNum($start, $end) {
 
     $result = array();
-    $first = $start;
-    for($i = $first; $i <= $end; $i++) {
+    $end = $end + 1;
+    // $first = $start;
+    for($i = $start; $i < $end; $i++) {
 
         array_push($result, $start[$i]);
     }
@@ -14,6 +15,7 @@ function betweenNum($start, $end) {
 }
 
 print_r(betweenNum(2, 10));
+
 
 $list = array(2, 4, 6, 9, 10);
 
